@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.app{
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+:root{
+  --mainColor:#e74737;
+}
+
+body{
+  margin:0;
+  width: 100%;
+  height: 100vh;
+  background-image:url('/src/img/decode.jfif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family:'Varela Round', sans-serif;
+}
+h1{
+  color:white;
+}
+h2{
+  color: black;
+}
+.search-form{
+  min-height: 10vh;
+  display:flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+.search-bar{
+  width: 50%;
+  border: none;
+  padding: 10px;
+}
+.search-button{
+  background-color: #e74737;
+  padding: 10px 20px;
   color: white;
+  border-radius: 5px;
+}
+.candidates{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap:unset;
+  
+}
+.wrp-login{
+  width: 400px;
+  height:550px;
+  position:fixed;
+  align-content: center;
+  z-index: 1;
+  overflow: hidden;
+  box-shadow: -2px -4px 25px rgba(0,0,0, 0.3),
+              0 4px 15px rgba(231,71,55,255);
+}
+.wrp-login:before {
+  content: "";
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  filter: blur(3px);
+
+}
+.wrp-login .container{
+  margin: 2.5rem auto;
+  display: wrap;
+  align-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.form{
+  width: 35%;
+  margin: 1rem auto 0;
+  overflow: hidden;
+  }
+.input-wrapper{
+  float: center;
+  margin-top: 1.8rem;
+  border: none;
+  width: 350px;
+  height: 35px;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  color:rgba(231,71,55,255);
+ 
+}
+.input-wrapper inut::placeholder{
+  font-family:'Varela Round', sans-serif;
+  color:var(--mainColor);
+
+}
+.wrp-login .fpw a{
+  text-decoration: none;
+  color: #e74737;
+}
+.wrp-login .fpw a:hover{
+  color: #e74737;
+}
+.wrp-login button{
+  float: center;
+  margin-top: 1.8rem;
+  border: none;
+  width: 135px;
+  height: 45px;
+  color:rgba(231,71,55,255);
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  background-size: 100% 150%;
+  transition: all 0.10s;
+}
+.wrp-login .button:hover{
+  background-size: 120% 150%;
+  background-position: 600% 600%;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
