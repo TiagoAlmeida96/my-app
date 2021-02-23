@@ -1,7 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
-import  React, {Component, LoginForm} from 'react';
-import {BrowserRouter as Router,Route, Switch, Link} from "react-router-dom"
+import  React, {Component} from 'react';
+import {BrowserRouter as Router,Route, Switch} from "react-router-dom"
 import Login from './containers/Login/Login'
 import Users from './containers/User/Users'
 

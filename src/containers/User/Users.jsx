@@ -1,7 +1,6 @@
-
 import React,{useEffect,useState} from "react"; 
 import Candidate from './Candidate'
-import style from './user.module.css';
+
 
 
 

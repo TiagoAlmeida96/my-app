@@ -1,6 +1,5 @@
 import React, {useState, useEffect } from 'react';
 import {useHistory } from 'react-router-dom';
-import {BrowserRouter as Router,Route, Switch, Link, Redirect} from "react-router-dom";
 
 
 function Login(){
@@ -15,7 +14,6 @@ function Login(){
   async function login()
   {
     console.warn(email,password);
-    let item={email,password};
     try{
     const result = await fetch("http://cv-local.decode.localhost/api/dna/user/get", {
       headers: {
